@@ -16,3 +16,11 @@ Reference or Non Primitive, we have Reference of there adrress unlike Primitive
 1. Array -- in []
 2. Objects -- in {}
 3. Functions
+
+-----------------------------MEMORY-----------------------------------------
+Two type of MEMORY
+stack - used in Primitive
+    -get a copy of var when declared
+    -- original value doesnt change when modified
+heap -- used in Non Primitive
+    - change in original value when modified

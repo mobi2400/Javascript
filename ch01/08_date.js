@@ -6,5 +6,5 @@ console.log(MyDate.toDateString());
 console.log(MyDate.toISOString());
 console.log(MyDate.toJSON());
 console.log(MyDate.toLocaleDateString());
-// date is object
+// date is object remember
 

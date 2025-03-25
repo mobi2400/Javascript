@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>mobi project</h1>
+   <button id="stop">stop</button>
+
+</body>
+<script>
+    // setTimeout used to do function after a interval for once
+  const change=setTimeout(()=>{
+        console.log("hello");
+        document.querySelector('h1').innerHTML = "practice ";
+    }, 2000)
+    document.getElementById('stop').onclick = ()=>{
+        console.log("event has been stopped");
+        clearInterval(change) // used to stop setTimeOut
+    }
+ 
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> real time clock</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <h1 class="time"></h1>
+</body>
+<script>
+    // do a particular set function after a interval contionously
+ document.getElementById('start').onclick = ()=>{
+    const stop = setInterval(()=>{
+        const now = new Date();
+        const time = now.toLocaleTimeString();
+        document.querySelector('.time').innerHTML = time;
+        console.log(time);
+    }, 1000)
+    document.getElementById('stop').onclick = ()=>{
+        console.log("event has been stopped");
+        clearInterval(stop) // used to stop setInterval
+    }}
+</script>
+</html>

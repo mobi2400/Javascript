@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+
+    
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://api.thingspeak.com/channels/1458412/fields/1.json?api_key=3Q2Z3ZQZ3ZQZ3ZQZ&results=2', true); 
+    xhr.onreadystatechange = ()=>{
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4 ){
+            console.log(xhr.responseText);
+        }
+    }   
+    xhr.send();
+</script>
+</html>

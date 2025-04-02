@@ -12,6 +12,7 @@ function MobiAsyncFunc(){
     return p;
 }
 async function main(){
+    // await is only operates in async function
     // no callBack and no .then syntax
     let value = await MobiAsyncFunc()
     // system will wait value will run fast
